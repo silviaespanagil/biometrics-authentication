@@ -29,7 +29,9 @@ class AppState: ObservableObject {
     
     func requestPinAuthentication() {
         
-        context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: "Enter your phone PIN to authenticate", reply: { (success, error) in
+        let reason = "Enter your phone PIN to authenticate"
+        
+        context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason, reply: { (success, error) in
             
             DispatchQueue.main.async {
                 if success {
@@ -48,8 +50,10 @@ class AppState: ObservableObject {
         checkBiometricsAvailability()
         
         if canEvaluate {
-            // Authenticate using biometrics
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "To find the secret to Monkey Island") { (success, error) in
+            
+            let reason = "Needed to find the secret to Monkey Island"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { (success, error) in
                 
                 DispatchQueue.main.async {
                     
