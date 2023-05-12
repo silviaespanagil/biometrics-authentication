@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "png-transparent-pirate-captain-monkey-island-2-lechucks-revenge-the-secret-of-monkey-island-the-curse-of-monkey-island-escape-from-monkey-island-grim-fandango-pirate-game-video-game-captain-thumbnail.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "png-transparent-pirate-captain-monkey-island-2-lechucks-revenge-the-secret-of-monkey-island-the-curse-of-monkey-island-escape-from-monkey-island-grim-fandango-pirate-game-video-game-captain-thumbnail 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "png-transparent-pirate-captain-monkey-island-2-lechucks-revenge-the-secret-of-monkey-island-the-curse-of-monkey-island-escape-from-monkey-island-grim-fandango-pirate-game-video-game-captain-thumbnail 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
