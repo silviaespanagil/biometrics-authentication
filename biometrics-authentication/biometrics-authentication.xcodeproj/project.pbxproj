@@ -11,6 +11,8 @@
 		A71135272A0CD26800E0106A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71135262A0CD26800E0106A /* ContentView.swift */; };
 		A71135292A0CD26A00E0106A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71135282A0CD26A00E0106A /* Assets.xcassets */; };
 		A711352C2A0CD26A00E0106A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A711352B2A0CD26A00E0106A /* Preview Assets.xcassets */; };
+		A7D3F6BC2A0CEB70008BE29B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D3F6BB2A0CEB70008BE29B /* LoginView.swift */; };
+		A7D3F6BE2A0CEF63008BE29B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D3F6BD2A0CEF63008BE29B /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A71135262A0CD26800E0106A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A71135282A0CD26A00E0106A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A711352B2A0CD26A00E0106A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7D3F6BB2A0CEB70008BE29B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A7D3F6BD2A0CEF63008BE29B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				A71135242A0CD26800E0106A /* biometrics_authenticationApp.swift */,
 				A71135262A0CD26800E0106A /* ContentView.swift */,
+				A7D3F6BD2A0CEF63008BE29B /* AppState.swift */,
+				A7D3F6BB2A0CEB70008BE29B /* LoginView.swift */,
 				A71135282A0CD26A00E0106A /* Assets.xcassets */,
 				A711352A2A0CD26A00E0106A /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D3F6BC2A0CEB70008BE29B /* LoginView.swift in Sources */,
 				A71135272A0CD26800E0106A /* ContentView.swift in Sources */,
 				A71135252A0CD26800E0106A /* biometrics_authenticationApp.swift in Sources */,
+				A7D3F6BE2A0CEF63008BE29B /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,6 +278,8 @@
 				DEVELOPMENT_TEAM = F3Y5649G7F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BioAuth;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We care about the security";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +309,8 @@
 				DEVELOPMENT_TEAM = F3Y5649G7F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BioAuth;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We care about the security";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
